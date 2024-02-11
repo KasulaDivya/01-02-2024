@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #divs{
+            width:60%;
+            height: 30px;
+            border: 2px solid black;
+            position: absolute;
+            left:22%;
+            top:30%;
+            border-radius: 8px;
+        }
+        #btn{
+            border-radius: 5px;
+            margin-left: 5%;
+            margin-top: 20%;
+           
+            
+        }
+    </style>
+</head>
+<body>
+    <script>
+        var a = document.createElement("div")
+        document.body.appendChild(a)
+        a.setAttribute("id","divs");
+
+        var btn1=document.createElement("button")
+        document.body.appendChild(btn1)
+        btn1.innerText="25%"
+        btn1.setAttribute("id","btn")
+        btn1.style.marginLeft="45%"
+        btn1.addEventListener("click",fun1)
+        function fun1(){
+           a.style.width="200px";
+           a.style.backgroundColor="pink"
+        
+        }
+
+        var btn2=document.createElement("button")
+        document.body.appendChild(btn2)
+        btn2.innerText="75%"
+        btn2.setAttribute("id","btn")
+        btn2.addEventListener("click",fun2)
+        function fun2(){
+            a.style.width="600px";
+            a.style.backgroundColor="pink"
+         
+         }
+
+        var btn3=document.createElement("button")
+        document.body.appendChild(btn3)
+        btn3.innerText="100%"
+        btn3.setAttribute("id","btn")
+        btn3.addEventListener("click",fun3)
+        function fun3(){
+            a.style.width="1000px";
+            a.style.backgroundColor="pink"
+         
+         }
+
+    </script>
+</body>
+</html>
